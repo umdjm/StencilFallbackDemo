@@ -1,6 +1,6 @@
 /node_modules
 /build
-/dist
+/www/build
 /coverage
 /generated
 /nightwatch.json

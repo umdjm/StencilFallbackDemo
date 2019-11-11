@@ -1,0 +1,1 @@
+import{p as m,b as p}from"./p-84c7b0d8.js";m().then(m=>p([["p-3tm4rfml",[[1,"my-component"]]]],m));
