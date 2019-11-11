@@ -1,11 +1,7 @@
 /node_modules
-/build
-/www/build
-/dist
 /coverage
 /generated
 /nightwatch.json
 .DS_Store
 .stencil
-/www
 /loader
