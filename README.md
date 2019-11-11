@@ -6,7 +6,7 @@ This project was generated using the [Stencil Getting Started](https://stenciljs
 
 ## Running Locally
 ```bash
-git clone https://github.com/ionic-team/stencil-component-starter.git my-component
+git clone https://github.com/umdjm/StencilFallbackDemo.git my-component
 cd my-component
 git remote rm origin
 npm install
