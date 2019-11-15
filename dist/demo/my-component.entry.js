@@ -1,4 +1,4 @@
-import { r as registerInstance, h, c as getElement } from './core-7fbd3457.js';
+import { r as registerInstance, h, c as getElement } from './core-4ff02c91.js';
 
 const MyComponent = class {
     constructor(hostRef) {

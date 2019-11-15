@@ -1,4 +1,4 @@
-import { Component, h } from '@stencil/core';
+import { Component, h, Element } from '@stencil/core';
 
 @Component({
   tag: 'my-component',
@@ -7,13 +7,25 @@ import { Component, h } from '@stencil/core';
 })
 export class MyComponent {
 
+  observer!: MutationObserver;
+  
+  connectedCallback() {
+    this.observer = new MutationObserver(this.handleChildrenChange);
+    this.observer.observe(this.host, { childList: true });
+  }
+
+  @Element() host: HTMLElement;
+  handleChildrenChange = () => {
+    (this.host as any).forceUpdate();
+  };
+
   render() {
     return <div>
       HEADER
 
       <br/>
 
-      SLOT GOES HERE (
+      SLOT (
         <slot />
       )
 
